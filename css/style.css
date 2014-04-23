@@ -54,6 +54,9 @@ body{
 	font-family: 'Roboto Condensed', sans-serif;
 	color:#444444;
 }
+section{
+`padding:30px 0px;
+}
 .margin20{margin-top:20px;}
 .header{
 	padding-top:40px;
@@ -144,6 +147,7 @@ h2.cont-title{
 	font-weight:300;
 	position:relative;
 	text-transform:uppercase;
+	margin: 30px 0px;
 }
 .cont-title a{
 	color:#a16b25;
