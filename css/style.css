@@ -728,7 +728,13 @@ height: auto;
 nav.menu ul li{
 	width:100%;
 }
-.search{display:none;}
+.search{display:none;position:absolute;top: 0px;}
+ .search-btn-t{
+	display:inline-block;
+	position: absolute;
+top: -40px;
+left: 350px;
+ }
 .search-wrap{
 	height:2px;
 	padding:0px;
