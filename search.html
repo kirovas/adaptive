@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/jquery.nouislider.min.css" rel="stylesheet">
+<link href="css/flexnav.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="page">
+	<div class="container">	
+		<section id="top">
+			<div class="header">
+			<div class="row">
+				<div class="col-md-3 col-sm-3">
+					<div class="logo"><img src="images/logo.png" /></div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="banner-top"><img src="images/banner.jpg" /></div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="welcome">
+						<a href="#">Войти</a> или <a href="#">зарегистрироваться</a>
+					</div>
+				</div>
+				</div><!-- row end -->
+				<nav class="menu">
+				<div class="menu-button"><img src="images/menu-res.png"/></div>
+				<ul class="flexnav" data-breakpoint="800">
+				<li><a href="#">контакты</a></li>
+				<li><a href="#">о клинике</a></li>
+				<li><a href="#">отделения</a></li>
+				<li><a href="#">услуги и цены</a></li>
+				<li><a href="#">страховые компании</a></li>
+				<li><a href="#">сервис</a></li>
+				<li><a href="#">сеть</a></li>
+				<li><a href="#">отзывы</a></li>
+				</ul>
+				</nav>
+				<div class="search-wrap">
+					<div class="row">
+						<div class="col-md-3 col-sm-5" id="strahovka">
+							<div class="styled-select" >
+							<span><img src="images/strahovka-icon.png"/></span>
+							<select>
+								<option>Найти страховку</option>
+								<option>Найти клинику</option>
+								<option> Найти что-то...</option>
+							</select>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+						<span class="search-btn-t"></span>
+							<div class="search"><span class="search-btn"></span><input type="text" value="" placeholder="Что будем искать?" class="s-input"/></div>
+						</div>
+						<div class="col-md-3 col-sm-4" id="city">
+						<div class="styled-select" >
+						<label for="city">Город</label>
+						<select name="city">
+							<option>Москва</option>
+						</select>
+						</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+	
+		</section>
+		<section id="name-result">
+			<div class="row">
+				<div class="col-md-12"><h1>Поиск клиники</h1></div>
+			</div><!-- row end -->
+			<div class="row">
+			<form>
+				<div class="cont col-md-6 col-sm-6">
+					<h2 class="cont-title"><span>Отделения</span></h2>
+					<div class="checkbox">
+						<input id="pol" type="checkbox" class="checkbox-css" checked > 
+						<label for="pol">Поликлиника</label>
+						</div>
+						<div class="checkbox">
+						<input id="sto" type="checkbox" class="checkbox-css"  > 
+						<label for="sto">Стоматлогия</label>
+						</div>
+						<div class="checkbox">
+						<input id="trav" type="checkbox" class="checkbox-css"  > 
+						<label for="trav">Травмпункт</label>
+						</div>
+						<div class="styled-select">
+					
+					<select class="sel-result">
+						<option>поликлиника</option>
+					</select>
+					</div>
+				</div>
+				<div class="cont col-md-6 col-sm-6">
+					<h2 class="cont-title"><span>Пациенты</span></h2>
+					<div class="checkbox">
+						<input id="ber" type="checkbox" class="checkbox-css" checked > 
+						<label for="ber">Беременные</label>
+						</div>
+						<div class="checkbox">
+						<input id="nr" type="checkbox" class="checkbox-css"  > 
+						<label for="nr">Новорожденные</label>
+						</div>
+						<div class="checkbox">
+						<input id="det" type="checkbox" class="checkbox-css"  > 
+						<label for="det">Дети</label>
+						</div>
+						<div class="checkbox">
+						<input id="vz" type="checkbox" class="checkbox-css"  > 
+						<label for="vz">Взрослые</label>
+						</div>
+				</div>
+			
+			</div><!-- row end -->
+			
+			<!-- dopolnitelno -->
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="cont-title"><span>Дополнительно</span></h2>
+				</div>
+				<div class="col-md-4">
+				<h3 class="smal-title">Резидент</h3>
+				<div class="radio-inline">
+						<input id="yes" type="radio" name="resident" class="radio-css" value="yes" > 
+						<label for="yes">да</label>
+				</div>
+				<div class="radio-inline">
+						<input id="no" type="radio" name="resident" class="radio-css" value="no" > 
+						<label for="no">нет</label>
+				</div>
+				</div>
+				<div class="col-md-4">
+					<h3 class="smal-title">Круглосуточно</h3>
+				<div class="radio-inline">
+						<input id="yes-rc" type="radio" name="rc" class="radio-css" value="yes" > 
+						<label for="yes-rc">да</label>
+				</div>
+				<div class="radio-inline">
+						<input id="no-rc" type="radio" name="rc" class="radio-css" value="no" > 
+						<label for="no-rc">нет</label>
+				</div>
+				</div>
+				<div class="col-md-4">
+					<h3 class="smal-title">сортировать по рейтингу</h3>
+				<div class="radio-inline">
+						<input id="yes-or" type="radio" name="order-ratio" class="radio-css" value="yes" > 
+						<label for="yes-or">да</label>
+				</div>
+				<div class="radio-inline">
+						<input id="no-or" type="radio" name="order-ratio" class="radio-css" value="no" > 
+						<label for="no-or">нет</label>
+				</div>
+				</div>
+				<div class="col-md-12">
+					<div class="center margin40">
+					<input type="submit"  class="btn btn-blue" value="искать клинику">
+					</div>
+				</div>
+				</form><!-- form end -->
+			</div><!-- row end -->
+		</section>
+		<section>
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="cont-title"><span>Результат поиска</span></h2>
+				</div>
+			</div><!-- row end -->
+			<div class="row">
+				<div class="col-md-12">
+				<div class="map-toggle visible-sm visible-xs"><span><img src="images/marker.png"/></span><a href="javascript:void(0)">Посмотреть на карте</a></div>
+					<div class="map">
+						<img src="images/map-frame.jpg"/>
+					</div>
+				</div>
+				<div class="col-md-12">
+				<!-- result list -->
+				<div class="result-list">
+					<div class="row">
+						<div class="col-md-7">
+							<span class="list-id">1.</span>
+							<p>“Медвисс на Никитской”</p>
+							<p>Москва, Леонтьевский переулок,  1, метро “Пушкинская“, “Арбатская”</p>
+						</div>
+						<div class="col-md-3">
+							<p class="phone-result center">Телефон: +7 495 257-85-85</p>
+						</div>
+						<div class="col-md-2">
+						<div class="ratio-hidden center">
+						<input class="dial" data-fgColor="#f2c48a" data-bgColor="#feedcf" data-width="75" data-thickness=".3" value="8.7">
+						</div>
+						</div>
+					</div>
+				</div>
+				<!-- result list -->
+				<div class="result-list">
+					<div class="row">
+						<div class="col-md-7">
+							<span class="list-id">2.</span>
+							<p>“Медвисс на Никитской”</p>
+							<p>Москва, Леонтьевский переулок,  1, метро “Пушкинская“, “Арбатская”</p>
+						</div>
+						<div class="col-md-3">
+							<p class="phone-result center">Телефон: +7 495 257-85-85</p>
+						</div>
+						<div class="col-md-2">
+						<div class="ratio-hidden center">
+						<input class="dial" data-fgColor="#f2c48a" data-bgColor="#feedcf" data-width="75" data-thickness=".3" value="8.7">
+						</div>
+						</div>
+					</div>
+				</div>
+				<!-- result list -->
+				<div class="result-list">
+					<div class="row">
+						<div class="col-md-7">
+							<span class="list-id">3.</span>
+							<p>“Медвисс на Никитской”</p>
+							<p>Москва, Леонтьевский переулок,  1, метро “Пушкинская“, “Арбатская”</p>
+						</div>
+						<div class="col-md-3 ">
+							<p class="phone-result center">Телефон: +7 495 257-85-85</p>
+						</div>
+						<div class="col-md-2">
+						<div class="ratio-hidden center">
+						<input class="knob" data-fgColor="#f2c48a" data-bgColor="#feedcf" data-width="75" data-thickness=".3" value="8.7">
+						</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div><!-- row end -->
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="pagination center" id="pink">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section id="footer">
+		<a href="javascript:void(0)" class="btn-toggle-f"></a>
+		<div class="footer-toggle">
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<h4>виды страхования</h4>
+					<ul>
+						<li><a href="#">Транспортные средства</a></li>
+						<li><a href="#">Недвижимость и имущество</a></li>
+						<li><a href="#">Жизнь, медицина, здоровье</a></li>
+						<li><a href="#">Финансы, кредиты, ипотека</a></li>
+						<li><a href="#">Гражданская ответсвенность</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<h4>виды страхования</h4>
+					<ul>
+						<li><a href="#">Транспортные средства</a></li>
+						<li><a href="#">Недвижимость и имущество</a></li>
+						<li><a href="#">Жизнь, медицина, здоровье</a></li>
+						<li><a href="#">Финансы, кредиты, ипотека</a></li>
+						<li><a href="#">Гражданская ответсвенность</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<h4>виды страхования</h4>
+					<ul>
+						<li><a href="#">Транспортные средства</a></li>
+						<li><a href="#">Недвижимость и имущество</a></li>
+						<li><a href="#">Жизнь, медицина, здоровье</a></li>
+						<li><a href="#">Финансы, кредиты, ипотека</a></li>
+						<li><a href="#">Гражданская ответсвенность</a></li>
+					</ul>
+				</div>
+			</div><!-- ROW END -->
+			</div>
+		</div>
+	</div>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/jquery.knob.js"></script>
+	<script src="js/script.js"></script>
+	<script type="text/javascript" src="js/jquery.flexnav.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+			$(function() {
+    $(".knob").knob({
+		'min':-10
+        ,'max':10
+	});
+});
+		});
+	</script>
+  </body>
+</html>

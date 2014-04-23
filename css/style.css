@@ -287,6 +287,16 @@ input[type=radio],
 input[type=checkbox] {
     display: none;
 }
+.radio-inline label {
+	display: inline-block;
+cursor: pointer;
+position: relative;
+padding-left: 35px;
+margin-right: 15px;
+font-size: 16px;
+line-height:30px;
+font-weight:400;
+}
 .checkbox{
 	margin-top:0px!important;
 }
@@ -312,12 +322,25 @@ bottom: 0px;
 background-color: #fff;
 border:1px solid #f1cea3;
 }
-input[type=radio]:checked  {
+.radio-inline label:before {
+content: "";
+display: inline-block;
+width: 22px;
+height: 22px;
+margin-right: 10px;
+position: absolute;
+left: 0;
+bottom: 0px;
+background-color: #fff;
+border:1px solid #f1cea3;
+border-radius:50%;
+}
+input[type=radio]:checked + label:before {
     content: "\2022";
-    color: #f3f3f3;
-    font-size: 30px;
-    text-align: center;
-    line-height: 18px;
+color: #E49E43;
+font-size: 37px;
+text-align: center;
+line-height: 20px;
 }
 
 input[type=checkbox]:checked + label:before {
@@ -334,7 +357,34 @@ line-height:30px;
 font-weight:400;
 margin-right: 15px;
 }
+.map-frame{
+	height:190px;
+	overflow:hidden;
+	border-radius:5px;
+}
+.result-list{
+	padding-top:20px;
+}
+.result-list p{
+	font-size:16px;
+	vertical-align:middle;
+	overflow: hidden;
+}
+p.phone-result {
 
+padding: 30px 0px 5px 0px;
+}
+.result-list span{
+	float:left;
+	font-size:35px;
+	color:#e49e43;
+	font-weight:300;
+	margin-right:30px;
+}
+.ratio-hidden{
+	height:100px;
+	overflow:hidden;
+}
 #priority #slider1 {
 height: 8px;
 background: #FCD5A6;
@@ -479,6 +529,12 @@ right: 0px;
 	
    /*border: 1px solid #f1cea3;*/
 }
+.styled-select select.sel-result{
+	border: 1px solid #f1cea3;
+	text-transform:lowercase;
+	color:#444;
+	margin-left:20px;
+}
 #special_programs .styled-select select{
 	border: 1px solid #f1cea3;
 	text-transform:lowercase;
@@ -597,6 +653,16 @@ ul.range li:last-child{
 .button-g a{
 	margin-right:20px;
 	margin-bottom:30px;
+}
+#pink li a{
+	color: #bc9565;
+background-color: #FFF;
+border: 1px solid #f1cea3;
+}
+#pink li a:hover{
+	color: #bc9565;
+background-color: #fee9c9;
+border-color: #f1cea3;
 }
 #footer{
 	margin-top:40px;

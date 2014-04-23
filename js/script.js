@@ -6,31 +6,7 @@ $(document).ready(function(){
 		'max': [ 10000 ]
 	}
 });*/
-var Link = $.noUiSlider.Link;
-$('#slider1').noUiSlider({
-	start: [ 50 ],
-	step: 10,
-	range: {
-		'min': [  0 ],
-		'max': [ 100 ]
-	},
-	serialization: {
-		lower: [
-			new Link({
-				target: $("#slider1val")
-			})
-		]
-	}
-});
-$('.slider2').noUiSlider({
-	start: [ 0 ],
-	step: 1,
-	range: {
-		'min': [  -5 ],
-		'max': [ 5 ]
-	},
-	
-});
+
 //knob
 $(function() {
     $(".dial").knob({
@@ -38,6 +14,7 @@ $(function() {
         ,'max':10
 	});
 });
+
 /*flex menu*/
 $(".flexnav").flexNav();
 
@@ -54,3 +31,10 @@ $('.search-btn-t').click(function() {
 });
 
 });
+
+$(document).ready(function(){
+			$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+		});
