@@ -641,6 +641,7 @@ text-align: center;
 .btn-toggle-f{
 	display:block;
 }
+ul.range{display:none;}
 .footer-toggle{
 	display:none;
 }
@@ -702,6 +703,7 @@ padding-left: 0px;
 width: 277px;
 vertical-align: top;
 }
+ul.range{display:none;}
 .btn-toggle-f{
 	display:block;
 }
