@@ -619,9 +619,10 @@ top: -45px;
 left:50px;
 }
 #city {
+
 position: absolute;
-top: -45px;
-right: 0px;
+top: 8px; 
+left: 80px;
 }
 .map{display:none;}
 .nav-tabs>li{
