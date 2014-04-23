@@ -632,6 +632,9 @@ left: 80px;
 .nav-tabs>li{
 	width:100%;
 }
+.servis-i p{
+	padding-left: 13px;
+}
 }
  
 /* Smartphones (landscape) ----------- */
