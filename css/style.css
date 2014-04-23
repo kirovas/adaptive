@@ -529,7 +529,7 @@ right: 0px;
 	
    /*border: 1px solid #f1cea3;*/
 }
-.styled-select select.sel-result{
+.styled-select select.sel-result, .styled-select select#sex{
 	border: 1px solid #f1cea3;
 	text-transform:lowercase;
 	color:#444;

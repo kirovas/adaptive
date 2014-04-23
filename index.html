@@ -11,6 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/jquery.nouislider.min.css" rel="stylesheet">
 <link href="css/flexnav.css" rel="stylesheet" type="text/css" />
+<link href="css/datepicker.css" rel="stylesheet" type="text/css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -250,28 +251,86 @@
 						<input id="3" type="checkbox" class="checkbox-css"> 
 						<label for="3">Вызов врача на дом</label>
 						</div>
+						<div class="checkbox">
+						<input id="4" type="checkbox" class="checkbox-css"> 
+						<label for="4">Вызов скорой помощи</label>
 						</div>
-					<div class="col-md-4 col-sm-6">
+						<div class="checkbox">
+						<fieldset disabled>
+						<input id="5" type="checkbox" class="checkbox-css"> 
+						<label for="5">Диспансеризация</label>
+						</fieldset>
+						</div>
+						<div class="checkbox">
+						<fieldset disabled>
+						<input id="6" type="checkbox" class="checkbox-css"> 
+						<label for="6">Госпитализация</label>
+						</fieldset>
+						</div>
+						<div class="checkbox">
+						<input id="7" type="checkbox" class="checkbox-css"> 
+						<label for="7">Ведение беременности</label>
+						</div>
+						<div class="checkbox">
+						<input id="8" type="checkbox" class="checkbox-css"> 
+						<label for="8">Контракт на роды</label>
+						</div>
+						<div class="checkbox">
+						<input id="9" type="checkbox" class="checkbox-css"> 
+						<label for="9">Личный врач</label>
+						</div>
+						</div>
+					<div class="col-md-5 col-sm-6">
+					<div class="row">
 					<div class="form-group">
-					<label for="inputname" class="col-sm-2 control-label">Имя</label>
-					<div class="col-sm-8">
+					<label for="inputname" class="col-sm-4 control-label">Имя</label>
+					<div class="col-sm-6">
 					<input type="text" class="form-control" id="inputname" placeholder="Имя">
 					</div>
 					</div>
 					<div class="form-group">
-					<label for="inputphone" class="col-sm-2 control-label">Телефон</label>
-					<div class="col-sm-8">
+					<label for="inputphone" class="col-sm-4 control-label">Телефон</label>
+					<div class="col-sm-6">
 					<input type="text" class="form-control" id="inputphone" placeholder="Телефон">
 					</div>
 					</div>
 					<div class="form-group">
-					<label for="inputmail" class="col-sm-2 control-label">Почта</label>
-					<div class="col-sm-8">
+					<label for="inputmail" class="col-sm-4 control-label">Почта</label>
+					<div class="col-sm-6">
 					<input type="email" class="form-control" id="inputmail" placeholder="e-mail">
 					</div>
 					</div>
+					<div class="form-group">
+					<!-- datapicker -->
+					<label for="date" class="col-sm-4 control-label">Дата рождения</label>
+					<div class="input-append date col-sm-6 " id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+					<input class="form-control" size="16" type="text" value="12-02-2012" id="date" name="date">
+					<span class="add-on"><i class="icon-th"></i></span>
 					</div>
-				<div class="col-md-4" id="priority">
+					</div>
+					<div class="form-group">
+					<div class="styled-select">
+					<label for="sex" class="col-sm-4 control-label">Пол</label>
+					<div class="col-sm-6">
+					<select id="sex" class="">
+					<option>мужской</option>
+					<option>женский</option>
+					</select>
+					</div>
+					</div>
+					</div>
+						<div class="checkbox">
+						<input id="no-d" type="checkbox" class="checkbox-css"> 
+						<label for="no-d">Не передавать контактные данные в страховые компании</label>
+						</div>
+						<div class="checkbox ">
+						<input id="no-r" type="checkbox" class="checkbox-css"> 
+						<label for="no-r">Не использовать в рассылках</label>
+						</div>
+						
+					</div>
+					</div>
+				<div class="col-md-3" id="priority">
 				<span>Приоритет</span>
 				<div class="slider" id="slider1"></div>
 				<span id="slider1val"></span>
@@ -625,7 +684,7 @@
 	<script src="js/jquery.knob.js"></script>
 	<script src="js/script.js"></script>
 	<script type="text/javascript" src="js/jquery.flexnav.js"></script>
-	
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('#myTab a').click(function (e) {
@@ -657,7 +716,7 @@ $('.slider2').noUiSlider({
 	},
 	
 });
-		
+	$('#date').datepicker()	
 		});
 	</script>
   </body>
