@@ -116,6 +116,25 @@ padding:7px 5px 5px 30px;
 border:1px solid #f1cea3;
 border-radius:5px;
 }
+.search-btn{
+	display:inline-block;
+	width:29px;
+	height:29px;
+	background:url(../images/search-btn.png)no-repeat;
+	cursor:pointer;
+	position: absolute;
+top: 5px;
+}
+.search-btn-t{
+	display:none;
+	width:29px;
+	height:29px;
+	background:url(../images/search-btn.png)no-repeat;
+	cursor:pointer;
+	position: absolute;
+top: 5px;
+left: 23px;
+}
 section#name-result{
 	padding-top:45px;
 }
@@ -614,7 +633,10 @@ and (max-width : 320px) {
 	.logo {
 text-align: center;
 }
- .search{display:none;}
+ .search{display:none;position:absolute;top: 43px;}
+ .search-btn-t{
+	display:inline-block;
+ }
 .btn-toggle-f{
 	display:block;
 }
@@ -655,7 +677,10 @@ and (max-width : 480px) {
 	.logo {
 text-align: center;
 }
- .search{display:none;}
+ .search{display:none;position:absolute;top: 43px;}
+ .search-btn-t{
+	display:inline-block;
+ }
 nav.menu ul li {
 width: 100%;
 }

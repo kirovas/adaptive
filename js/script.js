@@ -49,4 +49,8 @@ $('.map-toggle a').click(function() {
 $('.btn-toggle-f').click(function() {
 	$('#footer').find(".footer-toggle").slideToggle("slow");
 });
+$('.search-btn-t').click(function() {
+	$('.search-wrap').find(".search").slideToggle("slow");
+});
+
 });
