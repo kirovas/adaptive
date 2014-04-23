@@ -606,7 +606,7 @@ ul.range li:last-child{
 @media only screen 
 and (max-width : 320px) {
     /* Styles */
- .search{display:block;}
+ .search{display:none;}
 .btn-toggle-f{
 	display:block;
 }
