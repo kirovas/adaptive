@@ -388,6 +388,7 @@ display:inline-block;
 }
 .price-list{
 	position:relative;
+	margin-bottom: 40px;
 }
 .pink-radius{
 	background:#fef4e8;
