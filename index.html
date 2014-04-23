@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="windows-1251">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Госзаказ</title>
-
+    <title>Bootstrap 101 Template</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
+	<link href="css/jquery.nouislider.min.css" rel="stylesheet">
+<link href="css/flexnav.css" rel="stylesheet" type="text/css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,302 +19,619 @@
     <![endif]-->
   </head>
   <body>
-    <div class="wrap">
+    <div class="page">
+	<div class="container">	
 		<section id="top">
 			<div class="header">
-				<div class="container">
-				<div class="logo pull-left col-md-3"><img src="images/logo.png" /></div>
-				<div class="menu col-md-6">
-				<nav class="clearfix">  
-    <ul class="clearfix">  
-        <li><a href="#lead" class="scroll">Меню</a></li>  
-        <li><a href="#info" class="scroll">Меню</a></li>  
-        <li><a href="#featured" class="scroll">Меню</a></li>  
-        <li><a href="#media" class="scroll">Меню</a></li>     
-    </ul>  
-    <a href="#" id="pull">Меню</a>  
-</nav>  
-</div>
-			<div class="col-md-3">
-				<div class="call-block">
-				<p><span class="glyphicon glyphicon-earphone"></span>098-999-77-77</p>
-				<a href="#">Заказать обратный звонок</a>
+			<div class="row">
+				<div class="col-md-3 col-sm-3">
+					<div class="logo"><img src="images/logo.png" /></div>
 				</div>
-			</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="banner-top"><img src="images/banner.jpg" /></div>
 				</div>
-			</div>
-			<div class="top-wrap">
-				<div class="container">
-					<h3>Бесплатный семинар от практиков</h3>
-					<h1>Госзаказ - как войти и остаться!!!</h1>
-					<div class="col-md-8 ">
-						<a href="http://youtu.be/AOQvT442VPU" rel="prettyPhoto" title="СМОТРЕТЬ  ВИДЕО-ОТЗЫВ"><div class="mac">
-							<div class="youtube"></div>
-						</div></a>
+				<div class="col-md-3 col-sm-3">
+					<div class="welcome">
+						<a href="#">Р’РѕР№С‚Рё</a> РёР»Рё <a href="#">Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ</a>
 					</div>
-					<div class="col-md-4 ">
-						<div class="form-wrap">
-							<div class="form-header"></div>
-							<div class="form-body">
-								<form>
-									<div class="form-group">
-    <label for="name">Ваше имя</label>
-    <input type="text" class="form-control" id="name" placeholder="Ваше имя">
-  </div>
-  <div class="form-group">
-    <label for="phone">Ваш телефон</label>
-    <input type="text" class="form-control" id="phone" placeholder="Ваш телефон">
-  </div>
-  <p>ВЫБЕРИТЕ ВАРИАНТ УЧАСТИЯ:</p>
-  <div class="radio">
-        <label>
-          <input type="radio" value="option1" name="optionsRadios"> Вебинар в записи
-        </label>
-      </div>
-	  <div class="radio">
-        <label>
-          <input type="radio" value="option2" name="optionsRadios"> Живое участие
-        </label>
-      </div>
-  <div class="for-btn">
-  <button type="submit" class="btn btn-red">отправить</button></div>
-								</form>
+				</div>
+				</div><!-- row end -->
+				<nav class="menu">
+				<div class="menu-button"><img src="images/menu-res.png"/></div>
+				<ul class="flexnav" data-breakpoint="800">
+				<li><a href="#">РєРѕРЅС‚Р°РєС‚С‹</a></li>
+				<li><a href="#">Рѕ РєР»РёРЅРёРєРµ</a></li>
+				<li><a href="#">РѕС‚РґРµР»РµРЅРёСЏ</a></li>
+				<li><a href="#">СѓСЃР»СѓРіРё Рё С†РµРЅС‹</a></li>
+				<li><a href="#">СЃС‚СЂР°С…РѕРІС‹Рµ РєРѕРјРїР°РЅРёРё</a></li>
+				<li><a href="#">СЃРµСЂРІРёСЃ</a></li>
+				<li><a href="#">СЃРµС‚СЊ</a></li>
+				<li><a href="#">РѕС‚Р·С‹РІС‹</a></li>
+				</ul>
+				</nav>
+				<div class="search-wrap">
+					<div class="row">
+						<div class="col-md-3 col-sm-5" id="strahovka">
+							<div class="styled-select" >
+							<span><img src="images/strahovka-icon.png"/></span>
+							<select>
+								<option>РќР°Р№С‚Рё СЃС‚СЂР°С…РѕРІРєСѓ</option>
+								<option>РќР°Р№С‚Рё РєР»РёРЅРёРєСѓ</option>
+								<option> РќР°Р№С‚Рё С‡С‚Рѕ-С‚Рѕ...</option>
+							</select>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--///////////// Кто ведет? //////////////////////-->
-		<section id="lead">
-			<div class="s-title" id="t-lead"><h1>Кто ведет?</h1></div>
-			<div class="container">
-				<div class="col-md-3 col-sm-3"><img src="images/foto1.jpg"/></div>
-				<div class="col-md-9 col-sm-9 des" >
-					<h3 class="h-des">Молчанов Евгений, <span>31 год, предприниматель</span></h3>
-					<p class="p-des-l">Собственным предприятием реализовал более 130 Госконтрактов за 4е года, на общую сумму более 250 млн руб</p>
-					<p>Я не тендермен и не бывший начальник тендерного отдела. Сомневаюсь что я бы 
-получил опыт реализации Госконтрактов если бы не кризис 2008 г.. я бы по прежнему думал что это невозможно! Тогда мы занимались производством светоограждающих конструкций, и были ориентированы на продажи в частный сектор (80% продаж). В конце сентября 2008г. мы резко просели, остановилось всё!!! Вот тогда мы и обратили внимание на закупки Государственных и Муниципальных субъектов. Было сложно поверить что это возможно, но у нас не было других вариантов.
-
-В феврале 2009г мы подали первую заявку на участие в аукционе, это была замена окон в одной из районных больниц города, на сумму 4,2 млн руб. помниться нас тогда сняли, не 
-допустили до торгов. Мы направили жалобу в ФАС и ее признали обоснованной! Но тендер мы не выиграли! С этого то всё и началось, мы почувствовали что нас есть кому защищать, пришла уверенность!!!
-</p>
-				</div>
-				<div class="w-m"><a href="#" class="more">Подробнее</a></div>
-				
-			</div>
-			<div class="devider"></div>
-			<div class="container">
-				
-				<div class="col-md-9 col-sm-9 des" >
-					<h3 class="h-des">Молчанов Евгений, <span>31 год, предприниматель</span></h3>
-					<p class="p-des-r">Собственным предприятием реализовал более 130 Госконтрактов за 4е года, на общую сумму более 250 млн руб</p>
-					<p>Я не тендермен и не бывший начальник тендерного отдела. Сомневаюсь что я бы 
-получил опыт реализации Госконтрактов если бы не кризис 2008 г.. я бы по прежнему думал что это невозможно! Тогда мы занимались производством светоограждающих конструкций, и были ориентированы на продажи в частный сектор (80% продаж). В конце сентября 2008г. мы резко просели, остановилось всё!!! Вот тогда мы и обратили внимание на закупки Государственных и Муниципальных субъектов. Было сложно поверить что это возможно, но у нас не было других вариантов.
-
-В феврале 2009г мы подали первую заявку на участие в аукционе, это была замена окон в одной из районных больниц города, на сумму 4,2 млн руб. помниться нас тогда сняли, не 
-допустили до торгов. Мы направили жалобу в ФАС и ее признали обоснованной! Но тендер мы не выиграли! С этого то всё и началось, мы почувствовали что нас есть кому защищать, пришла уверенность!!!
-</p>
-				</div>
-				<div class="col-md-3 col-sm-3"><img src="images/foto2.jpg"/></div>
-				<div class="w-m"><a href="#" class="more">Подробнее</a></div>
-				
-			</div>
-			<div class="devider"></div>
-		</section>
-		<!--///////////// Для кого: //////////////////////-->
-		<section id="info">
-			<div class="s-title" id="info-lead"><h1>Для кого:</h1></div>
-			<div class="container">
-				<div class="col-md-5 col-sm-5"><img src="images/masscotte1.png" /></div>
-				<div class="col-md-7 col-sm-7">
-					<div class="inner-p">
-					<p>Хотел бы продавать с помощью Госзаказа/Тендеров но не знает как и с чего начать.</p>
-
-					<p>Пробовал участвовать, но что-то не заладилось, не получилось. Слился!</p>
-
-					<p>Те кто уже продает с помощью Госзаказа но показывает весьма скромные результаты.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--///////////// Что будет:: //////////////////////-->
-		<section id="featured">
-		<div class="s-title" id="featured-lead"><h1>Что будет:</h1></div>
-		<div class="feat-mas">
-		<div class="container">
-				
-				<div class="col-md-7 col-sm-7">
-					
-					<ul class="col-list">
+						<div class="col-md-6 col-sm-6">
+							<div class="search"><input type="text" value="" placeholder="Р§С‚Рѕ Р±СѓРґРµРј РёСЃРєР°С‚СЊ?" class="s-input"/></div>
+						</div>
+						<div class="col-md-3 col-sm-4" id="city">
+						<div class="styled-select" >
+						<label for="city">Р“РѕСЂРѕРґ</label>
+						<select name="city">
+							<option>РњРѕСЃРєРІР°</option>
+						</select>
+						</div>
+						</div>
 						
-					<li><span>1.</span> Определение цели/Основной принцип торгов</li>
-					<li><span>2.</span> Внутрение и внешние критерии для входа на Госзаказ</li>
-					<li><span>3.</span> Почему новички не могут так просто выйти на Госзаказ, и на чем они сливаются?</li>
-					<li><span>4.</span> Кратчайший путь получения Госконтракта</li>
-					<li><span>5.</span> Финансовые возможности и их решение</li>
-					<li><span>6.</span> Оптимизация расходов</li>
-					<li><span>7.</span> Идеальная модель предприятия.</li>
-					<li><span>8.</span> Разрушение мифов.</li>
-					<li><span>9.</span> Преимущества и недостатки</li>
-					<li><span>10.</span> Презентация продукта: «Госконтракт за 2 месяца»</li>
-					<li><span>11.</span> Бонус: Бриф с ведущими</li>
+					</div>
+				</div>
+			</div>
+	
+		</section>
+		<section id="name-result">
+			<div class="row">
+				<div class="col-md-6"><h1>medwiss</h1></div>
+				<div class="col-md-3 col-sm-6">
+					<div class="r-p"><span class="i-smile"><img src="images/smile.png" /></span><span>РҐРІР°Р»СЏС‚: 35 С‡РµР»РѕРІРµРє</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="r-p"><span class="i-smile"><img src="images/smile2.png" /></span><span>СЂСѓРіР°СЋС‚: 15 С‡РµР»РѕРІРµРє</span></div>
+				</div>
+			</div><!-- row end -->
+			<div class="row">
+				<div class="cont col-md-12">
+					<h2 class="cont-title"><span>РљРѕРЅС‚Р°РєС‚С‹</span></h2>
+				</div>
+			</div><!-- row end -->
+			<div class="row">
+				<div class="col-md-6 c-info">
+					
+						<div class="info-block">
+							<p><span><img src="images/clock.png"/></span>08:00 - 21:00 РµР¶РµРґРЅРµРІРЅРѕ</p>
+							<p><span><img src="images/phone.png"/></span>+7 495 251-12-32</p>
+						</div>
+						<div class="info-block">
+							<p><span><img src="images/www.png"/></span>www.medwiss.ru</p>
+							<p><span><img src="images/mail.png"/></span>info@medwiss.ru</p>
+						</div>
+					<div class="info-block">
+						<h3 class="smal-title">РљР°Рє РґРѕР±СЂР°С‚СЊСЃСЏ</h3>
+						<p><span><img src="images/car.png"/></span>РЅР°Р№С‚Рё СЃРІРѕСЋ РјР°С€РёРЅСѓ, РІСЃС‚Р°РІРёС‚СЊ РєР»СЋС‡Рё  РїРѕРµС…Р°С‚СЊ</p>
+						<p><span><img src="images/bus.png"/></span>СЃС‚Р°РЅС†РёСЏ РјРµС‚СЂРѕ РўСЂРµС‚СЊСЏРєРѕРІСЃРєР°СЏ, СЂР°РґРёР°Р»СЊРЅР°СЏ,  РІС‹Р№С‚Рё РЅР° СѓР»РёС†Сѓ,
+РіР»СЏРґСЏ РЅР° РњР°РєР”РѕРЅР°Р»СЊРґСЃ РїРѕРІРµСЂРЅСѓС‚СЊ РЅР°Р»РµРІРѕ РІРѕР·Р»Рµ С„РѕРЅС‚Р°РЅР°</p>
+					</div>
+					<div class="row">
+						<div class="col-mad-12 margin20">
+							<p>Р—Р°СЃС‚СЂР°С…РѕРІР°РЅРЅС‹Рµ РїРѕ РїСЂРѕРіСЂР°РјРјР°Рј Р”РњРЎ РјРѕРіСѓС‚ РѕР±СЂР°С‚РёС‚СЊСЃСЏ РІ РњРµРґСЃРІРёСЃСЃ Р—Р°РјРѕСЃРєРІРѕСЂРµС‡СЊРµ С‡РµСЂРµР· РґРёСЃРїРµС‚С‡РµСЂР° СЃС‚СЂР°С…РѕРІРѕР№ РєРѕРјРїР°РЅРёРё РїРѕ С‚РµР»РµС„РѕРЅСѓ: +7 495 251-12-32 РєСЂСѓРіР»РѕСЃСѓС‚РѕС‡РЅРѕ</p>
+						</div>
+					</div><!-- row end -->
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+					<div class="col-md-12 col-sm-6">
+					<div class="map-toggle visible-sm visible-xs"><span><img src="images/marker.png"/></span><a href="javascript:void(0)">РџРѕСЃРјРѕС‚СЂРµС‚СЊ РЅР° РєР°СЂС‚Рµ</a></div>
+					<div class="map" >
+						<img src="images/map.png" />
+					</div>
+					</div>
+					<div class="col-md-12 col-sm-6">
+					<div class="share ">
+						<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,nocounter,theme=08" data-services="vkontakte,odnoklassniki,facebook,twitter,google"></div>
+					</div>
+					</div>
+					</div><!-- row end-->
+				</div>
+			</div><!-- row end -->
+			<!-- about -->
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="cont-title"><span>Рћ РєР»РёРЅРёРєРµ</span></h2>
+				</div>
+				<div class="col-md-12">
+					<p>MedSwiss вЂ” СЌС‚Рѕ С€РІРµР№С†Р°СЂСЃРєР°СЏ РєРѕРјРїР°РЅРёСЏ, РїСЂРёРІР»РµС‡РµРЅРЅР°СЏ РґР»СЏ СѓРїСЂР°РІР»РµРЅРёСЏ СЃРµС‚СЊСЋ РјРµРґРёС†РёРЅСЃРєРёС… С†РµРЅС‚СЂРѕРІ РІ РњРѕСЃРєРІРµ Рё С„РёР»РёР°Р»Р° РІ РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРіРµ. РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ РєРѕРјС„РѕСЂС‚ РґР»СЏ РїР°С†РёРµРЅС‚Р° Рё РµРІСЂРѕРїРµР№СЃРєРёР№ СѓСЂРѕРІРµРЅСЊ СЃРµСЂРІРёСЃР° - РєР»СЋС‡РµРІС‹Рµ РёРґРµРѕР»РѕРіРёС‡РµСЃРєРёРµ РїСЂРёРЅС†РёРїС‹ РєР»РёРЅРёРєРё MedSwiss.</p>
 
+<p>РњС‹ СЂР°Р±РѕС‚Р°РµРј СЃ 2002 РіРѕРґР°. Р’ РЅР°С€РёС… РєР»РёРЅРёРєР°С… РїСЂРёРµРј РІРµРґСѓС‚ СЃРїРµС†РёР°Р»РёСЃС‚С‹ Р±РѕР»СЊС€РёРЅСЃС‚РІР° СѓР·РєРёС… РЅР°РїСЂР°РІР»РµРЅРёР№ РІ РјРµРґРёС†РёРЅРµ. РџСЂРµРґРѕСЃС‚Р°РІР»СЏСЋС‚СЃСЏ СѓСЃР»СѓРіРё РєРІР°Р»РёС„РёС†РёСЂРѕРІР°РЅРЅС‹С… РІСЂР°С‡РµР№ СЂР°Р·Р»РёС‡РЅС‹С… СЃРїРµС†РёР°Р»СЊРЅРѕСЃС‚РµР№ Рё РѕР±С€РёСЂРЅС‹Рµ Р»Р°Р±РѕСЂР°С‚РѕСЂРЅС‹Рµ, СѓР»СЊС‚СЂР°Р·РІСѓРєРѕРІС‹Рµ (РІРєР»СЋС‡Р°СЏ Р­РҐРћ РљР“, РЈР—Р СЃРѕСЃСѓРґРѕРІ), Р»СѓС‡РµРІС‹Рµ РёСЃСЃР»РµРґРѕРІР°РЅРёСЏ, СЃРѕРІСЂРµРјРµРЅРЅС‹Рµ РїСЂРѕРіСЂР°РјРјС‹ РєР°СЂРґРёРѕР»РѕРіРёС‡РµСЃРєРѕРіРѕ РјРѕРЅРёС‚РѕСЂРёРЅРіР°, РіРёРЅРµРєРѕР»РѕРіРёС‡РµСЃРєРѕРіРѕ, СЃС‚РѕРјР°С‚РѕР»РѕРіРёС‡РµСЃРєРѕРіРѕ Рё С„РёР·РёРѕС‚РµСЂР°РїРµРІС‚РёС‡РµСЃРєРѕРіРѕ Р»РµС‡РµРЅРёСЏ. РљРѕРЅСЃСѓР»СЊС‚Р°РЅС‚Р°РјРё С†РµРЅС‚СЂР° СЏРІР»СЏСЋС‚СЃСЏ Р°РєР°РґРµРјРёРєРё Рё РїСЂРѕС„РµСЃСЃРѕСЂР° РІРµРґСѓС‰РёС… РЅР°СѓС‡РЅРѕ-РёСЃСЃР»РµРґРѕРІР°С‚РµР»СЊСЃРєРёС… РєР»РёРЅРёРє РЅР°С€РµР№ СЃС‚СЂР°РЅС‹.</p>
+
+<p>РљР»РёРЅРёРєРё РѕСЃРЅР°С‰РµРЅС‹ СЃРѕРІСЂРµРјРµРЅРЅС‹Рј РјРµРґРёС†РёРЅСЃРєРёРј РѕР±РѕСЂСѓРґРѕРІР°РЅРёРµРј. РђРјР±СѓР»Р°С‚РѕСЂРЅС‹Рµ РєР°СЂС‚С‹ (РёСЃС‚РѕСЂРёРё Р±РѕР»РµР·РЅРё) РїР°С†РёРµРЅС‚РѕРІ РІРµРґСѓС‚СЃСЏ РІ РЅР°С€РёС… С†РµРЅС‚СЂР°С… РЅРµ С‚РѕР»СЊРєРѕ РІ Р±СѓРјР°Р¶РЅРѕРј, РЅРѕ Рё РІ СЌР»РµРєС‚СЂРѕРЅРЅРѕРј РІРёРґРµ. Р’СЃРµ РјРµРґРёС†РёРЅСЃРєРёРµ С†РµРЅС‚СЂС‹ РѕР±СЉРµРґРёРЅРµРЅС‹ РµРґРёРЅРѕР№ СЃРµС‚РµРІРѕР№ РєРѕРјРїСЊСЋС‚РµСЂРЅРѕР№ РїСЂРѕРіСЂР°РјРјРѕР№, С‡С‚Рѕ РґР°РµС‚ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РїР°С†РёРµРЅС‚Р°Рј РїРѕСЃРµС‰Р°С‚СЊ СѓРґРѕР±РЅС‹Рµ РґР»СЏ РЅРёС… РєР»РёРЅРёРєРё Рё СЃРїРµС†РёР°Р»РёСЃС‚РѕРІ РІ РњРѕСЃРєРІРµ Рё РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРіРµ.</p>
+				</div>
+			</div><!-- row end -->
+		</section>
+		<section>
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="cont-title"><span>РћС‚РґРµР»РµРЅРёСЏ</span></h2>
+				</div>
+			</div><!-- row end -->
+			<div class="row">
+				<div class="col-md-8 c-info">
+					<h3 class="smal-title">РѕС‚РґРµР»РµРЅРёРµ С„СѓРЅРєС†РёРѕРЅР°Р»СЊРЅРѕР№ РґРёР°РіРЅРѕСЃС‚РёРєРё</h3>
+						<div class="info-block-small">
+							<span class="pull-left"><img src="images/clock.png"/></span><p>РџРЅ-РџС‚: 07:00 - 20:00<br>
+																		РЎР±: 07:00 - 13:00
+																		Р’СЃ: РІС‹С…РѕРґРЅРѕР№
+																		РџРµСЂРµСЂС‹РІ: 13:00 - 14:00</p>
+							<span class="pull-left "><img src="images/phone.png"/></span><p>+7 495 251-12-32 - СЂРµРіРёСЃС‚СЂР°С‚СѓСЂР°
+																							+7 495 251-12-33 - СЃРїСЂР°РІРѕС‡РЅР°СЏ</p>
+						</div>
+					<div class="info-block-small">
+						<span class="pull-left "><img src="images/doc.png"/></span><p>РІСЂР°С‡ РЈР—Р РґРёР°РіРЅРѕСЃС‚РёРєРё РёРіР»РѕС‚РµСЂР°РїРµРІС‚ РјР°РЅСѓР°Р»СЊРЅС‹Р№ С‚РµСЂР°РїРµРІС‚ СЂРµРЅС‚РіРµРЅРѕР»РѕРі С„РёР·РёРѕС‚РµСЂР°РїРµРІС‚</p>
+					</div>
+					<h3 class="smal-title">СЃС‚РѕРјР°С‚РѕР»РѕРіРёС‡РµСЃРєРѕРµ РѕС‚РґРµР»РµРЅРёРµ</h3>
+						<div class="info-block-small">
+							<span class="pull-left"><img src="images/clock.png"/></span><p>РџРЅ-РџС‚: 07:00 - 20:00<br>
+																		РЎР±: 07:00 - 13:00
+																		Р’СЃ: РІС‹С…РѕРґРЅРѕР№
+																		РџРµСЂРµСЂС‹РІ: 13:00 - 14:00</p>
+							<span class="pull-left "><img src="images/phone.png"/></span><p>+7 495 251-12-32 - СЂРµРіРёСЃС‚СЂР°С‚СѓСЂР°
+																							+7 495 251-12-33 - СЃРїСЂР°РІРѕС‡РЅР°СЏ</p>
+						</div>
+					<div class="info-block-small">
+						<span class="pull-left "><img src="images/doc.png"/></span><p>С…РёСЂСѓСЂРі СЃС‚РѕРјР°С‚РѕР»РѕРі РѕСЂС‚РѕРґРѕРЅС‚ РїСЂРѕС‚РµР·РёСЃС‚</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-6 col-sm-4">
+							<div class="img-radius"><img src="images/img1.jpg" /></div>
+						</div>
+						<div class="col-md-6 col-sm-4">
+							<div class="img-radius"><img src="images/img2.jpg" /></div>
+						</div>
+						<div class="col-md-6 col-sm-4">
+							<div class="img-radius"><img src="images/img3.jpg" /></div>
+						</div>
+						<div class="col-md-6 col-sm-4">
+							<div class="img-radius"><img src="images/img4.jpg" /></div>
+						</div>
+						<div class="col-md-6 col-sm-4">
+							<div class="img-radius"><img src="images/img5.jpg" /></div>
+						</div>
+						<div class="col-md-6 col-sm-4">
+							<div class="img-radius"><img src="images/img6.jpg" /></div>
+						</div>
+						<div class="col-md-6 col-sm-4">
+							<div class="img-radius"><img src="images/img7.jpg" /></div>
+						</div>
+						<div class="col-md-6 col-sm-4">
+							<div class="img-radius"><img src="images/img8.jpg" /></div>
+						</div>
+					</div><!-- row end -->
+				</div>
+			</div><!-- row end -->
+		</section>
+		<section>
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="cont-title"><span>РЈСЃР»СѓРіРё Рё С†РµРЅС‹</span></h2>
+				</div>
+				<div class="col-md-12">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" id="myTab">
+					<li class="active"><a href="#home" data-toggle="tab">Р”РњРЎ С„РёР·РёС‡РµСЃРєРёРј Р»РёС†Р°Рј</a></li>
+					<li><a href="#profile" data-toggle="tab">Р”РњРЎ СЋСЂРёРґРёС‡РµСЃРєРёРј Р»РёС†Р°Рј</a></li>
+  
 					</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="home">
+	<div class="row">
+	<form class="form-horizontal" role="form">
+						<div class="col-md-4 col-sm-6">
+						<div class="checkbox">
+						<input id="1" type="checkbox" class="checkbox-css" checked > 
+						<label for="1">РџРѕР»РёРєР»РёРЅРёРєР°</label>
+						</div>
+						<div class="checkbox">
+						<input id="2" type="checkbox" class="checkbox-css"> 
+						<label for="2">РЎС‚РѕРјР°С‚Р»РѕРіРёСЏ</label>
+						</div>
+						<div class="checkbox">
+						<input id="3" type="checkbox" class="checkbox-css"> 
+						<label for="3">Р’С‹Р·РѕРІ РІСЂР°С‡Р° РЅР° РґРѕРј</label>
+						</div>
+						</div>
+					<div class="col-md-4 col-sm-6">
+					<div class="form-group">
+					<label for="inputname" class="col-sm-2 control-label">РРјСЏ</label>
+					<div class="col-sm-8">
+					<input type="text" class="form-control" id="inputname" placeholder="РРјСЏ">
+					</div>
+					</div>
+					<div class="form-group">
+					<label for="inputphone" class="col-sm-2 control-label">РўРµР»РµС„РѕРЅ</label>
+					<div class="col-sm-8">
+					<input type="text" class="form-control" id="inputphone" placeholder="РўРµР»РµС„РѕРЅ">
+					</div>
+					</div>
+					<div class="form-group">
+					<label for="inputmail" class="col-sm-2 control-label">РџРѕС‡С‚Р°</label>
+					<div class="col-sm-8">
+					<input type="email" class="form-control" id="inputmail" placeholder="e-mail">
+					</div>
+					</div>
+					</div>
+				<div class="col-md-4" id="priority">
+				<span>РџСЂРёРѕСЂРёС‚РµС‚</span>
+				<div class="slider" id="slider1"></div>
+				<span id="slider1val"></span>
+				<p class="pull-left">Р¦РµРЅР°</p><p class="pull-right">РљР°С‡РµСЃС‚РІРѕ</p>
+				<div class="clearfix"></div>
+				<div>
+				<textarea placeholder="Р’РІРµРґРёС‚Рµ РїСЂРёРјРµС‡Р°РЅРёРµ" id="prim"></textarea>
+				</div>
+				</div>
+			<div class="col-md-12">
+				<div class="center button">
+				<input type="submit" class="btn btn-blue" value="РїРѕРґРѕР±СЂР°С‚СЊ РїСЂРѕРіСЂР°РјРјСѓ" />
+				</div>
+			</div>
+  </form>
+  </div><!-- row end --> 
+  </div>	<!-- TAB HOME END -->
+  <div class="tab-pane" id="profile">...</div>
+  
+</div> <!-- TAB CONTENT END -->
+				</div>
+			</div><!-- row end -->
+		</section>
+		<!-- special programs -->
+		<section id="special_programs">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="special-p">СЃРїРµС†РёР°Р»СЊРЅС‹Рµ РїСЂРѕРіСЂР°РјРјС‹</div>
+					<div class="f-int">
+					<div class="styled-select">
+					<label for="interest">Р§С‚Рѕ РІР°СЃ РёРЅС‚РµСЂРµСЃСѓРµС‚</label>
+					<select id="interest">
+						<option>Р”Р»СЏ СЃР°РґРёРєР° Рё С€РєРѕР»С‹    <span style="color:#dab383;">1 500 - 6 000</span></option>
+					</select>
+					</div>
+					<div class="b-group"><a href="#" class="btn btn-blue">Р—Р°РєР°Р·Р°С‚СЊ</a></div>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-offset-1">
+					<div class="price-list">
+						<div class="pink-radius"><a href="#">СЃРєР°С‡Р°С‚СЊ РїСЂР°Р№СЃ-Р»РёСЃС‚</a></div>
+						<div class="price-icon"></div>
+					</div>
+				</div>
+			</div>
+		
+		
+		</section>
+		<!-- company -->
+		<section id="company">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="cont-title"><span>СЃС‚СЂР°С…РѕРІС‹Рµ РєРѕРјРїР°РЅРёРё</span></h2>
+				</div>
+			</div>
+			<div class="row company_logo">
+				<div class="col-md-3 col-sm-6">
+					<img src="images/peco.png"/>
+					<p>Р РµСЃРѕ-РіР°СЂР°РЅС‚РёСЏ</p>
+					<span>A++</span>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img src="images/uralsib.png"/>
+					<p>РЈСЂР°Р»СЃРёР±</p>
+					<span>A++</span>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img src="images/m-alico.png"/>
+					<p>Metlife Alico</p>
+					<span>A++</span>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img src="images/oranta.png"/>
+					<p>РћСЂР°РЅС‚Р°</p>
+					<span>A++</span>
+				</div>
+			
+			</div>
+		</section>
+		<!-- Service -->
+		<section id="service">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="cont-title"><span>РЎРµСЂРІРёСЃ</span></h2>
+				</div>
+			</div>
+			<div class="row margin40">
+				<div class="col-md-4 col-sm-6">
+					<div class="servis-i"><img src="images/parking.png"/><p>РџР°СЂРєРѕРІРєР°</p></div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="servis-i"><img src="images/help.png"/><p>РђРїС‚РµРєР°</p></div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="servis-i"><img src="images/ac.png"/><p>РљРѕРЅРґРёС†РёРѕРЅРµСЂ</p></div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="servis-i"><img src="images/game-room.png"/><p>РРіСЂРѕРІР°СЏ РєРѕРјРЅР°С‚Р°</p></div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="servis-i"><img src="images/pay-card.png"/><p>РћРїР»Р°С‚Р° РїРѕ РєР°СЂС‚Рµ (Р±Р°РЅРєРѕРјР°С‚)</p></div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="servis-i"><img src="images/drink.png"/><p>РќР°РїРёС‚РєРё (РєСѓР»РµСЂ)</p></div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="servis-i"><img src="images/food.png"/><p>РЎС‚РѕР»РѕРІР°СЏ</p></div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="servis-i"><img src="images/invalid.png"/><p>РџРѕРґСЉРµРјРЅРёРєРё РґР»СЏ РёРЅРІР°Р»РёРґРѕРІ</p></div>
+				</div>
+			</div>
+		</section>
+		<section id="set">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="cont-title"><span>РЎРµС‚СЊ РјРµРґРёС†РёРЅСЃРєРёС… С†РµРЅС‚СЂРѕРІ <a href="#">Medwiss</a></span></h2>
+				</div>
+			</div>
+			<div class="row margin40">
+				<div class="col-md-6 col-sm-6">
+					<p>вЂњРњРµРґРІРёСЃСЃ РЅР° РќРёРєРёС‚СЃРєРѕР№вЂќ<br>
+						РњРѕСЃРєРІР°, Р›РµРѕРЅС‚СЊРµРІСЃРєРёР№ РїРµСЂРµСѓР»РѕРє,  1, РјРµС‚СЂРѕ вЂњРџСѓС€РєРёРЅСЃРєР°СЏвЂњ, вЂњРђСЂР±Р°С‚СЃРєР°СЏвЂќ<br>
+						РўРµР»РµС„РѕРЅ: +7 495 257-85-85<br>
+					<p class="margin40">вЂњРњРµРґРІРёСЃСЃ РІ РќР°РіРѕСЂРЅРѕРјвЂќ<br>
+						РњРѕСЃРєРІР°, РџСЂРѕСЃРїРµРєС‚ РќР°РіРѕСЂРЅС‹Р№, 6, РјРµС‚СЂРѕ вЂњРќР°РіР°С‚РёРЅСЃРєР°СЏвЂњ, вЂњРўСѓР»СЊСЃРєР°СЏвЂќ<br>
+						РўРµР»РµС„РѕРЅ: +7 495 257-85-85</p>
+						<p class="margin40">вЂњРњРµРґРІРёСЃСЃ РЅР° РќРёРєРёС‚СЃРєРѕР№вЂќ<br>
+						РњРѕСЃРєРІР°, Р›РµРѕРЅС‚СЊРµРІСЃРєРёР№ РїРµСЂРµСѓР»РѕРє,  1, РјРµС‚СЂРѕ вЂњРџСѓС€РєРёРЅСЃРєР°СЏвЂњ, вЂњРђСЂР±Р°С‚СЃРєР°СЏвЂќ<br>
+						РўРµР»РµС„РѕРЅ: +7 495 257-85-85</p>
+						<p class="margin40">вЂњРњРµРґРІРёСЃСЃ РІ РќР°РіРѕСЂРЅРѕРјвЂќ<br>
+						РњРѕСЃРєРІР°, РџСЂРѕСЃРїРµРєС‚ РќР°РіРѕСЂРЅС‹Р№, 6, РјРµС‚СЂРѕ вЂњРќР°РіР°С‚РёРЅСЃРєР°СЏвЂњ, вЂњРўСѓР»СЊСЃРєР°СЏвЂќ<br>
+						РўРµР»РµС„РѕРЅ: +7 495 257-85-85</p>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<img src="images/medic.jpg"/>
+				</div>
+			</div>
+		</section>
+		<section id="review">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="cont-title"><span>РћС‚Р·С‹РІС‹</span></h2>
+				</div>
+			</div>
+			<div class="row">
+			<div class="review-title com-md-12">Р’Р°С€Рµ РјРЅРµРЅРёРµ РІР°Р¶РЅРѕ Р»СЋРґСЏРј. РџРѕРґРµР»РёС‚РµСЃСЊ!</div>
+				<div class="col-md-9 review-block">
+					
+						<div class="row">
+						<!-- review block 1 -->
+							<div class="col-md-4"><p>РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»РёР·Рј РІСЂР°С‡РµР№</p></div>
+							<div class="col-md-8">
+							<div class="slider-wrap">
+								<span class="sl-icon left"><img src="images/angry-icon.png"/></span>
+								<div class="slider2" id="slider2"></div>
+								<span class="sl-icon right"><img src="images/smile-icon.png"/></span>
+								
+								<ul class="range">
+									<li>-5</li>
+									<li>-4</li>
+									<li>-3</li>
+									<li>-2</li>
+									<li>-1</li>
+									<li>0</li>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+							</div><!-- slider wrap end -->
+							</div>
+							<!-- review block 2 -->
+							<div class="col-md-4"><p>РѕС‚РЅРѕС€РµРЅРёРµ Рє РїР°С†РёРµРЅС‚Р°Рј</p></div>
+							<div class="col-md-8">
+							<div class="slider-wrap">
+								<span class="sl-icon left"><img src="images/angry-icon.png"/></span>
+								<div class="slider2" id="slider3"></div>
+								<span class="sl-icon right"><img src="images/smile-icon.png"/></span>
+								
+								<ul class="range">
+									<li>-5</li>
+									<li>-4</li>
+									<li>-3</li>
+									<li>-2</li>
+									<li>-1</li>
+									<li>0</li>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+							</div><!-- slider wrap end -->
+							</div>
+							<!-- review block 3 -->
+							<div class="col-md-4"><p>С‚РµС…РЅРёС‡РµСЃРєРѕРµ РѕСЃРЅР°С‰РµРЅРёРµ</p></div>
+							<div class="col-md-8">
+							<div class="slider-wrap">
+								<span class="sl-icon left"><img src="images/angry-icon.png"/></span>
+								<div class="slider2" id="slider3"></div>
+								<span class="sl-icon right"><img src="images/smile-icon.png"/></span>
+								
+								<ul class="range">
+									<li>-5</li>
+									<li>-4</li>
+									<li>-3</li>
+									<li>-2</li>
+									<li>-1</li>
+									<li>0</li>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+							</div><!-- slider wrap end -->
+							</div>
+							<!-- review block 4 -->
+							<div class="col-md-4"><p>СЂРµР·СѓР»СЊС‚Р°С‚ РІРёР·РёС‚Р°</p></div>
+							<div class="col-md-8">
+							<div class="slider-wrap">
+								<span class="sl-icon left"><img src="images/angry-icon.png"/></span>
+								<div class="slider2" id="slider3"></div>
+								<span class="sl-icon right"><img src="images/smile-icon.png"/></span>
+								
+								<ul class="range">
+									<li>-5</li>
+									<li>-4</li>
+									<li>-3</li>
+									<li>-2</li>
+									<li>-1</li>
+									<li>0</li>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+							</div><!-- slider wrap end -->
+							</div>
+							<!-- review block 5 -->
+							<div class="col-md-4"><p>РЅР°Р»РёС‡РёРµ РѕС‡РµСЂРµРґРµР№</p></div>
+							<div class="col-md-8">
+							<div class="slider-wrap">
+								<span class="sl-icon left"><img src="images/angry-icon.png"/></span>
+								<div class="slider2" id="slider3"></div>
+								<span class="sl-icon right"><img src="images/smile-icon.png"/></span>
+								
+								<ul class="range">
+									<li>-5</li>
+									<li>-4</li>
+									<li>-3</li>
+									<li>-2</li>
+									<li>-1</li>
+									<li>0</li>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+							</div><!-- slider wrap end -->
+							</div>
+							<!-- review block 6 -->
+							<div class="col-md-4"><p>СѓСЂРѕРІРµРЅСЊ СЃРµСЂРІРёСЃР°</p></div>
+							<div class="col-md-8">
+							<div class="slider-wrap">
+								<span class="sl-icon left"><img src="images/angry-icon.png"/></span>
+								<div class="slider2" id="slider3"></div>
+								<span class="sl-icon right"><img src="images/smile-icon.png"/></span>
+								
+								<ul class="range">
+									<li>-5</li>
+									<li>-4</li>
+									<li>-3</li>
+									<li>-2</li>
+									<li>-1</li>
+									<li>0</li>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+							</div><!-- slider wrap end -->
+							</div>
+						</div><!-- row end -->
 					
 				</div>
-				
+				<div class="col-md-3">
+				<div class="ratio">
+				<p>РћР±С‰РёР№ СЂРµР№С‚РёРЅРі</p>
+				<input class="dial" data-fgColor="#f2c48a" data-bgColor="#feedcf" data-thickness=".3" value="8.7">
+				</div>
+				</div>
+				<div class="col-md-6">
+					<div class="button-g">
+					<a href="#" class="btn btn-blue">РґРѕР±Р°РІРёС‚СЊ РІ СЂРµР№С‚РёРЅРі</a>
+					<a href="#" class="btn btn-blue">РїРѕСЃРјРѕС‚СЂРµС‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚С‹</a>
+					</div>
+				</div>
+			</div><!-- row end -->
+		</section>
+		<section id="footer">
+		<a href="javascript:void(0)" class="btn-toggle-f"></a>
+		<div class="footer-toggle">
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<h4>РІРёРґС‹ СЃС‚СЂР°С…РѕРІР°РЅРёСЏ</h4>
+					<ul>
+						<li><a href="#">РўСЂР°РЅСЃРїРѕСЂС‚РЅС‹Рµ СЃСЂРµРґСЃС‚РІР°</a></li>
+						<li><a href="#">РќРµРґРІРёР¶РёРјРѕСЃС‚СЊ Рё РёРјСѓС‰РµСЃС‚РІРѕ</a></li>
+						<li><a href="#">Р–РёР·РЅСЊ, РјРµРґРёС†РёРЅР°, Р·РґРѕСЂРѕРІСЊРµ</a></li>
+						<li><a href="#">Р¤РёРЅР°РЅСЃС‹, РєСЂРµРґРёС‚С‹, РёРїРѕС‚РµРєР°</a></li>
+						<li><a href="#">Р“СЂР°Р¶РґР°РЅСЃРєР°СЏ РѕС‚РІРµС‚СЃРІРµРЅРЅРѕСЃС‚СЊ</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<h4>РІРёРґС‹ СЃС‚СЂР°С…РѕРІР°РЅРёСЏ</h4>
+					<ul>
+						<li><a href="#">РўСЂР°РЅСЃРїРѕСЂС‚РЅС‹Рµ СЃСЂРµРґСЃС‚РІР°</a></li>
+						<li><a href="#">РќРµРґРІРёР¶РёРјРѕСЃС‚СЊ Рё РёРјСѓС‰РµСЃС‚РІРѕ</a></li>
+						<li><a href="#">Р–РёР·РЅСЊ, РјРµРґРёС†РёРЅР°, Р·РґРѕСЂРѕРІСЊРµ</a></li>
+						<li><a href="#">Р¤РёРЅР°РЅСЃС‹, РєСЂРµРґРёС‚С‹, РёРїРѕС‚РµРєР°</a></li>
+						<li><a href="#">Р“СЂР°Р¶РґР°РЅСЃРєР°СЏ РѕС‚РІРµС‚СЃРІРµРЅРЅРѕСЃС‚СЊ</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<h4>РІРёРґС‹ СЃС‚СЂР°С…РѕРІР°РЅРёСЏ</h4>
+					<ul>
+						<li><a href="#">РўСЂР°РЅСЃРїРѕСЂС‚РЅС‹Рµ СЃСЂРµРґСЃС‚РІР°</a></li>
+						<li><a href="#">РќРµРґРІРёР¶РёРјРѕСЃС‚СЊ Рё РёРјСѓС‰РµСЃС‚РІРѕ</a></li>
+						<li><a href="#">Р–РёР·РЅСЊ, РјРµРґРёС†РёРЅР°, Р·РґРѕСЂРѕРІСЊРµ</a></li>
+						<li><a href="#">Р¤РёРЅР°РЅСЃС‹, РєСЂРµРґРёС‚С‹, РёРїРѕС‚РµРєР°</a></li>
+						<li><a href="#">Р“СЂР°Р¶РґР°РЅСЃРєР°СЏ РѕС‚РІРµС‚СЃРІРµРЅРЅРѕСЃС‚СЊ</a></li>
+					</ul>
+				</div>
+			</div><!-- ROW END -->
 			</div>
 		</div>
-		</section>
-		
-		<section id="media">
-			<div class="s-title" id="media-lead"><h1>Фото/видео отчеты:</h1></div>
-			<div class="container center">
-				<div class="block">
-					<div class="block-image"><img src="images/block-img.jpg" />
-					<div class="cover"></div>
-					</div>
-					<div class="block-pl">
-						<p>Семинар 23.09.14 в Москве</p>
-					</div>
-					<div class="block-look">
-						<a href="http://youtu.be/AOQvT442VPU" rel="prettyPhoto"><span class="glyphicon glyphicon-eye-open"></span>Смотреть</a>
-					</div>
-				</div>
-				<div class="block">
-					<div class="block-video"><img src="images/block-img.jpg" />
-					<div class="cover"></div>
-					</div>
-					<div class="block-pl">
-						<p>Семинар 23.09.14 в Москве</p>
-					</div>
-					<div class="block-look">
-						<a href="http://youtu.be/AOQvT442VPU" rel="prettyPhoto"><span class="glyphicon glyphicon-eye-open"></span>Смотреть</a>
-					</div>
-				</div>
-				<div class="block">
-					<div class="block-image"><img src="images/block-img.jpg" />
-					<div class="cover"></div>
-					</div>
-					<div class="block-pl">
-						<p>Семинар 23.09.14 в Москве</p>
-					</div>
-					<div class="block-look">
-						<a href="http://youtu.be/AOQvT442VPU" rel="prettyPhoto"><span class="glyphicon glyphicon-eye-open"></span>Смотреть</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section id="review">
-			<div class="s-title" id="t-lead"><h1>ОТЗЫВЫ:</h1></div>
-			<div class="container">
-				<div class="col-md-6 col-sm-6">
-					<div class="review-block">
-					<img src="images/avatar.jpg" style="float:left;width:136px;" />
-					<h3>Сергей Валерьянович</h3>
-					<p>Всем привет, подскажыте пожалуста, у меня ланос 1.5 2000 г. выпуска, при езде на нентраль держет большые обороты, тармажу мшыну и обороты падают до нармальново. И эта праблема пявилась после таво как Всем привет, подскажыте пожалуста, у меня ланос 1.5 2000 г. выпуска, при езде на нентраль держет большые обороты, тармажу мшыну и обороты падают до нармальново. И эта праблема пявилась после таво как </p>
-					<div class="btn-rev pull-right"><span class="glyphicon glyphicon-eye-open"></span><a href="http://youtu.be/AOQvT442VPU" rel="prettyPhoto" title="СМОТРЕТЬ  ВИДЕО-ОТЗЫВ">СМОТРЕТЬ  ВИДЕО-ОТЗЫВ</a></div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-				<div class="review-block">
-					<img src="images/avatar.jpg" style="float:left;width:136px;" />
-					<h3>Сергей Валерьянович</h3>
-					<p>Всем привет, подскажыте пожалуста, у меня ланос 1.5 2000 г. выпуска, при езде на нентраль держет большые обороты, тармажу мшыну и обороты падают до нармальново. И эта праблема пявилась после таво как Всем привет, подскажыте пожалуста, у меня ланос 1.5 2000 г. выпуска, при езде на нентраль держет большые обороты, тармажу мшыну и обороты падают до нармальново. И эта праблема пявилась после таво как </p>
-					<div class="btn-rev pull-right"><span class="glyphicon glyphicon-eye-open"></span><a href="http://youtu.be/AOQvT442VPU" rel="prettyPhoto" title="СМОТРЕТЬ  ВИДЕО-ОТЗЫВ">СМОТРЕТЬ  ВИДЕО-ОТЗЫВ</a></div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-				<div class="review-block">
-					<img src="images/avatar.jpg" style="float:left;width:136px;" />
-					<h3>Сергей Валерьянович</h3>
-					<p>Всем привет, подскажыте пожалуста, у меня ланос 1.5 2000 г. выпуска, при езде на нентраль держет большые обороты, тармажу мшыну и обороты падают до нармальново. И эта праблема пявилась после таво как Всем привет, подскажыте пожалуста, у меня ланос 1.5 2000 г. выпуска, при езде на нентраль держет большые обороты, тармажу мшыну и обороты падают до нармальново. И эта праблема пявилась после таво как </p>
-					<div class="btn-rev pull-right"><span class="glyphicon glyphicon-eye-open"></span><a href="http://youtu.be/AOQvT442VPU" rel="prettyPhoto" title="СМОТРЕТЬ  ВИДЕО-ОТЗЫВ">СМОТРЕТЬ  ВИДЕО-ОТЗЫВ</a></div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-				<div class="review-block">
-					<img src="images/avatar.jpg" style="float:left;width:136px;" />
-					<h3>Сергей Валерьянович</h3>
-					<p>Всем привет, подскажыте пожалуста, у меня ланос 1.5 2000 г. выпуска, при езде на нентраль держет большые обороты, тармажу мшыну и обороты падают до нармальново. И эта праблема пявилась после таво как Всем привет, подскажыте пожалуста, у меня ланос 1.5 2000 г. выпуска, при езде на нентраль держет большые обороты, тармажу мшыну и обороты падают до нармальново. И эта праблема пявилась после таво как </p>
-					<div class="btn-rev pull-right"><span class="glyphicon glyphicon-eye-open"></span><a href="http://youtu.be/AOQvT442VPU" rel="prettyPhoto" title="СМОТРЕТЬ  ВИДЕО-ОТЗЫВ">СМОТРЕТЬ  ВИДЕО-ОТЗЫВ</a></div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section id="contact">
-			<div class="container">
-				<div class="contact-info center">
-				<h1>Дата проведения: 29 марта 15.00-19.00</h1>
-				<h3>Где пройдет: Москва м. Савеловская, ул. Бутырская д.46, 2 подъезд, 6 этаж "Коворк на крыше"</h3>
-				</div>
-			</div>
-		</section>
-		
-		<div class="footer">
-		<div class="container">
-			<div class="copy pull-left">
-				<p>2014 г. Все права защищены ©«TenderLife»</p>
-			</div>
-			<div class="call-block pull-right">
-				<p><span class="glyphicon glyphicon-earphone"></span>098-999-77-77</p>
-				<a href="#">Заказать обратный звонок</a>
-			</div>
-		</div>
-		</div>
+	</div>
 	</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
-<script src="js/jquery.prettyPhoto.js" type="text/javascript" ></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.nouislider.min.js"></script>
+	<script src="js/jquery.knob.js"></script>
+	<script src="js/script.js"></script>
+	<script type="text/javascript" src="js/jquery.flexnav.js"></script>
+	
 	<script>
-		$(function() {
-			var pull 		= $('#pull');
-				menu 		= $('nav ul');
-				menuHeight	= menu.height();
-
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
-
-			$(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
+		$(document).ready(function(){
+			$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
 		});
 	</script>
-	<script>
-	$(document).ready(function (){
-	$(".scroll").click(function (event) {
-    event.preventDefault();
-    //calculate destination place
-    var dest = 0;
-    if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
-        dest = $(document).height() - $(window).height();
-    } else {
-        dest = $(this.hash).offset().top;
-    }
-    //go to destination
-    $('html,body').animate({
-        scrollTop: dest
-    }, 2000, 'swing');
-});
-//Pretty Photo
-
-    $("a[rel^='prettyPhoto']").prettyPhoto({
-	theme: 'dark_rounded',
-		social_tools:false
-	});
-
-});
-</script>
   </body>
 </html>
