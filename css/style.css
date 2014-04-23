@@ -611,6 +611,9 @@ ul.range li:last-child{
 @media only screen 
 and (max-width : 320px) {
     /* Styles */
+	.logo {
+text-align: center;
+}
  .search{display:none;}
 .btn-toggle-f{
 	display:block;
@@ -643,6 +646,9 @@ left: 80px;
 and (min-width : 321px)
 and (max-width : 480px) {
     /* Styles */
+	.logo {
+text-align: center;
+}
  .search{display:none;}
 nav.menu ul li {
 width: 100%;
@@ -674,7 +680,9 @@ left: 80px;
 @media (min-width: 768px)
 and (max-width : 900px)
 {
-
+.logo {
+text-align: center;
+}
 	nav.menu {
 height: auto;
 }
