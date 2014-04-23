@@ -361,7 +361,7 @@ input.btn-blue{
 	color:#567b81;
 	font-size:16px;
 	text-transform:uppercase;
-	padding: 10px 55px;
+	padding: 10px 50px;
 	background:#bfe2e8;
 	cursor:pointer;
 }
@@ -633,6 +633,12 @@ top: 8px;
 left: 80px;
 }
 .map{display:none;}
+.info-block-small {
+padding-left: 0px;
+width: 277px;
+vertical-align: top;
+}
+
 .nav-tabs>li{
 	width:100%;
 }
@@ -665,6 +671,11 @@ top: 8px;
 left: 80px;
 }
 .map{display:none;}
+.info-block-small {
+padding-left: 0px;
+width: 277px;
+vertical-align: top;
+}
 .btn-toggle-f{
 	display:block;
 }
